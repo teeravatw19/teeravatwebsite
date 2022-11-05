@@ -1,0 +1,123 @@
+body{
+    background: #ddd8d5;
+    color: #91966e;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+h1, h5{
+    font-weight: 100;
+    font-family: 'Bungee', cursive;
+}
+
+.hamburger{
+    position: absolute;
+    margin: 50px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.line{
+    width: 50px;
+    height: 6px;
+    background: #bcad90;
+    margin-bottom: 5px;
+}
+
+.menu{
+    width: 300px;
+    height: 100%;
+    background: #bcad90;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left .1s;
+}
+
+.menu-item:first-child{
+    margin-top: 180px;
+}
+
+.menu--open{
+    left: 0;
+}
+
+.menu-item{
+    color: #fff;
+    width: 100%;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+}
+
+.menu-item:hover {
+    background: #91966e;
+    cursor: pointer;
+}
+
+pre{
+    font-family: 'Rubik', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+section{
+    background: #ddd8d5;
+    padding: 20px;
+    margin: 40px auto;
+    width: 1500px;
+}
+
+section ul{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul li{
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active{
+    background: #03a9f4;
+    color: #fff;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .itemBox{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+}
+
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

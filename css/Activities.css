@@ -1,0 +1,139 @@
+body{
+    background: #ddd8d5;
+    color: #91966e;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+h1, h5{
+    font-weight: 100;
+    font-family: 'Bungee', cursive;
+}
+
+section{
+    background: #e4e4e6;
+    padding: 6rem 3rem;
+    margin: 0;
+}
+
+.hamburger{
+    position: absolute;
+    margin: 50px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.line{
+    width: 50px;
+    height: 6px;
+    background: #bcad90;
+    margin-bottom: 5px;
+}
+
+.menu{
+    width: 300px;
+    height: 100%;
+    background: #bcad90;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left .1s;
+}
+
+.menu-item:first-child{
+    margin-top: 180px;
+}
+
+.menu--open{
+    left: 0;
+}
+
+.menu-item{
+    color: #fff;
+    width: 100%;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+}
+
+.menu-item:hover {
+    background: #91966e;
+    cursor: pointer;
+}
+
+.container{
+    width: 1280px;
+    min-height: 50px;
+    background: #e4e4e6;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #bcad90;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: 1s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: .5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #bcad90;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
